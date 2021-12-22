@@ -162,6 +162,27 @@ header .contenedor-texto .texto .nombre {
     color: rgb(250, 151, 2);
 }
 
+/*RESUMEN*/
+.resumen{
+    display: flex;
+    margin-top: 50px;
+}
+
+#about{
+    padding-right: 20px;
+}
+
+#parrafoAb{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 170%;
+    font-family: Advent Pro;
+}
+
+#about-titulo{
+    color: rgb(250, 151, 2);
+}
 
 /*ARTICLE*/
 article{
