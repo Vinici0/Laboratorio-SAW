@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 /* HEADER */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu #logo {
+    width: 15%;
+    padding: 5px;
+}
+
 .contenedor {
     /* background: #ccc;*/
     margin: auto; /*Para cetrar todo*/
@@ -63,7 +73,7 @@ header .contenedor-texto .texto .nombre {
     line-height: 50px;
 }
 
-/* HEADER */
+/* CONTENIDO */
 .contenedor-slider {
     width: 90%;
     max-width: 900px;
