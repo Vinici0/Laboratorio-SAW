@@ -1,14 +1,17 @@
+
+
 .form-plan {
     width: 85%;
-    background: #1f3f5f;
+    background: rgb(238, 212, 128);
     padding: 30px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 80px;
     border-radius: 4px;
+    font-size: 18px;
     font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+    color: black;
+    box-shadow: 7px 13px 37px rgb(0, 0, 0);
 }
 
 
@@ -19,15 +22,16 @@
 
 .controls {
     width: 100%;
-    background: #24303c;
+    background: #3c3c24;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #c5b41f;
     font-family: 'calibri';
     font-size: 18px;
     color: white;
 }
+
 .form-plan label{
     text-align: left;
 }
@@ -52,6 +56,16 @@
 .form-plan .botons {
     width: 100%;
     background: #000000;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+#plan{
+    width: 100%;
+    background: #3c3c24;
     border: none;
     padding: 12px;
     color: white;
