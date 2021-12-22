@@ -15,9 +15,9 @@
     <link href='https://fonts.googleapis.com/css?family=Potta One' rel='stylesheet'>
     <link rel="shortcut icon" href="img/paw-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="estilos/estilofooter.css" />
-    <link rel="stylesheet" href="estilos/slider.css" />
     <link rel="stylesheet" href="estilos/loader.css" />
-    <script src="contacto.js"></script>
+    <link rel="stylesheet" href="estilos/contacto.css" />
+    <script src="js/contacto.js"></script>
     <title>HUELLITA♥</title>
 </head>
 
@@ -47,46 +47,28 @@
             </nav>
         </div>
 
-        <header>
-            <div class="contenedor">
-
-                <div class="contenedor-texto">
-                    <div class="texto">
-                        <h1 class="nombre">CLÍNICA</h1>
-                        <h1>VETERINARIA</h1>
-                        <h1>HUELLITAS</h1>
-                        <img src="img/huellas-de-animal.png" width="115" alt="155" alt="veterinaria" />
-
-                    </div>
-                </div>
-            </div>
-        </header>
-
         <section class="main">
 
-            <article>
+            <article class="article1">
                 <div>
-                    <form></form>
-                </div>
-                <div>
-
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <br>
-                    <br>
-                    <br>
-                    <h1>Heladeria</h1>
-
-                    <form>
-
+                    <form class="form-plan">
+                        <h1>Solicita tu plan</h1>
+                        <p>Si deseas contratar VetPlan, rellena el siguiente formulario y le enviaremos toda la
+                            información
+                            necesaria para dar de alta su plan.</p>
                         <fieldset>
-                            <legend>Datos cliente</legend>
+                            <legend><b>Datos cliente</b></legend>
 
-                            <label for="nombre_cliente">Nombre cliente</label>
+                            <label for="nombre_cliente">Nombres completos</label>
                             <input type="text" id="nombre_cliente" />
+                            <br />
+
+                            <label for="direccion">Direccion</label>
+                            <input type="text" id="direccion" />
+                            <br />
+
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" />
                             <br />
 
                             <label for="telefono_cliente">Telefono cliente</label>
@@ -97,29 +79,33 @@
                             <input type="email" id="email_cliente" />
                             <br />
 
+                            <label for="plan">Tipo de plan</label>
+                            <select id="plan">
+                                <option value="" disabled="disabled" selected="">Elige tu plan</option>
+                                <option value="Vetplan Básico">Vetplan Básico</option>
+                                <option value="Vetplan Complet">Vetplan Complet</option>
+                                <option value="Vetplan Plus">Vetplan Plus</option>
+                            </select>
+                            <br />
+
                         </fieldset>
 
                         <fieldset>
-                            <legend>Elige tu helado</legend>
+                            <legend><b>Datos de mascota</b></legend>
 
-                            <h2>Sabor</h2>
-                            <input type="radio" name="sabor" id="vainilla" value="vainilla" checked />Vainilla<br />
-                            <input type="radio" name="sabor" id="chocolate" value="chocolate" />Chocolate<br />
-                            <input type="radio" name="sabor" id="mixto" value="mixto" />Mixto<br />
+                            <label for="nombre_mascota">Nombre de su mascota</label>
+                            <input type="text" id="nombre_mascota" />
+                            <br />
 
-                            <h2>Recipiente</h2>
+                            <label for="raza">Raza</label>
+                            <input type="text" id="raza" />
+                            <br />
 
-                            <input type="radio" name="recipiente" id="copa" value="copa" checked />Copa<br />
-                            <input type="radio" name="recipiente" id="tarrina" value="tarrina" />Tarrina<br />
+                            <label for="edad">Edad en meses</label>
+                            <input type="text" id="edad" />
+                            <br />
 
-                            <h2>Extras</h2>
-
-                            <input type="checkbox" name="extras[]" id="caramelo" value="caramelo" />Caramelo<br />
-                            <input type="checkbox" name="extras[]" id="kitkat" value="kitkat" />Kitkat<br />
-                            <input type="checkbox" name="extras[]" id="chocolateExtra"
-                                value="chocolate" />Chocolate<br />
-
-                        </fieldset>
+                        </fieldset>-->
 
                         <!-- <input type="submit" value="Enviar" /> -->
 

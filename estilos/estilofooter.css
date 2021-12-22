@@ -183,7 +183,7 @@ header .contenedor-texto .texto .nombre {
 }
 
 /*ARTICLE*/
-article {
+.article {
     background: rgb(255, 204, 170);
 }
 
