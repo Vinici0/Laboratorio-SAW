@@ -1,26 +1,28 @@
 .form{
-    display: flex;
-    margin: auto;
     margin-top: 50px;
+    
 }
 
 .article-form{
-    width: 50%;
+    display: flex;
+    width: 100%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    
 }
 
 .form-elemento{
     margin-bottom: 20px;
 }
 
+.form-plan, .table{
+    margin: 50px;
+}
+
 .form-plan {
-    width: 85%;
+    width: 40%;
     background: rgb(238, 212, 128);
     padding: 30px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 80px;
     border-radius: 4px;
     font-family: 'calibri';
     font-size: 18px;
@@ -69,6 +71,10 @@ label{
     font-size: 16px;
 }
 
+.metodoPago{
+    padding: 10px;
+}
+
 #conceptoPago{
    
     background: #3c3c24;
@@ -101,6 +107,7 @@ label{
 table{
     border-collapse: collapse;
     margin:auto;
+    width: 100%;
 }
 
 td, th{
