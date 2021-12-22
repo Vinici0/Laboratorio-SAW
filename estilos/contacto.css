@@ -19,6 +19,10 @@
     margin: 50px;
 }
 
+.table{
+    width: 50%
+}
+
 .form-plan {
     width: 40%;
     background: rgb(238, 212, 128);
@@ -114,5 +118,12 @@ td, th{
     text-align: center;
     padding: 12px;
     border: solid #a1781f 1px;
-    
+}
+
+th{
+    background-color: #cf9529 ;
+}
+
+td{
+    background-color: #fccca6 ;
 }
