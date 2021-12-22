@@ -19,7 +19,7 @@ body {
     overflow: hidden;
 }
 
-
+/*ESTILOS NAV*/
 nav .menu {
     margin: 40px 0;
     
@@ -184,7 +184,7 @@ header .contenedor-texto .texto .nombre {
     color: rgb(250, 151, 2);
 }
 
-/*ARTICLE*/
+/*ARTICLE-SLIDER*/
 article{
     background: rgb(255, 204, 170);
 }
