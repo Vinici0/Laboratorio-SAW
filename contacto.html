@@ -46,48 +46,76 @@
                         CONTACTO</a>
             </nav>
         </div>
-       <section class="form">
+       <section>
         <h1>Calcular Gasto</h1>
-        <form>
-            <div class="form-elemento">
-                <p>Mètodo de pago</p><br>
-                <label for="efectivo">Efectivo<input type="radio" id="efectivo" /></label>
-                <label for="tarjetaC">Tarjeta Crédito/Débito<input type="radio" id="tarjetaC" /></label>
-                <label for="deposito">Depósito Bancario <input type="radio" id="depostio" /></label>
+        <article class="form">
+            <form class="form-plan">
+                <div class="form-elemento">
+                    <legend><b>Método de pago</b></legend><br>
+                    <label for="efectivo"><input type="radio" id="efectivo" />Efectivo</label>
+                    <label for="tarjetaC"><input type="radio" id="tarjetaC" />Tarjeta Crédito/Débito</label>
+                    <label for="deposito"><input type="radio" id="depostio" />Depósito Bancario</label>
+                </div>
+                <div class="form-elemento">
+                    <label for="typePago">Concepto de pago</label>
+                    <select id="conceptoPago" class="controls">
+                        <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
+                        <option value="Vetplan Básico">Consulta medica</option>
+                        <option value="Vetplan Complet">Placa radiográfica</option>
+                        <option value="Vetplan Plus">Esterilización</option>
+                        <option value="Vetplan Plus">Electrocarfiograma</option>
+                        <option value="Vetplan Plus">Exploración ótica</option>
+                        <option value="Vetplan Plus">Test inmunológico</option>
+                        <option value="Vetplan Plus">Limpieza bucal</option>
+                        <option value="Vetplan Plus">Baño general</option>
+                    </select>
+                </div>
+                <div class="form-elemento">
+                    <legend><b>Datos de mascota</b></legend>
+                </div>
+                <div class="form-elemento">
+                    <label for="raza">Tipo de Raza</label>
+                    <input class="controls" type="text" id="raza" />
+                    <br />
+                </div>
+                <div class="form-elemento">
+                    <label for="edad">Edad en meses</label>
+                    <input  class="controls" type="text" id="edad" />
+                    <br />
+                </div>
+                <div class="addBotonContainer">
+                    <button class="botons" > Añadir</button>
+                </div>
+            </form>
+            <div>
+                <table>
+                    <tr>
+                        <th>
+                            Método de pago
+                        </th>
+                        <th>
+                            Concepto de pago
+                        </th>
+                        <th>
+                            Valor a pagar
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Efectivo</td>
+                        <td>Consulta medica</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Efectivo</td>
+                        <td>Consulta medica</td>
+                        <td>10</td>
+                    </tr>
+                </table>
             </div>
-            <div class="form-elemento">
-                <label for="typePago">Concepto de pago</label>
-                <select id="conceptoPago">
-                    <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
-                    <option value="Vetplan Básico">Consulta medica</option>
-                    <option value="Vetplan Complet">Placa radiográfica</option>
-                    <option value="Vetplan Plus">Esterilización</option>
-                    <option value="Vetplan Plus">Electrocarfiograma</option>
-                    <option value="Vetplan Plus">Exploración ótica</option>
-                    <option value="Vetplan Plus">Test inmunológico</option>
-                    <option value="Vetplan Plus">Limpieza bucal</option>
-                    <option value="Vetplan Plus">Baño general</option>
-                </select>
-            </div>
-            <div class="form-elemento">
-                <legend><b>Datos de mascota</legend></p>
-            </div>
-            <div class="form-elemento">
-                <label for="raza">Tipo de Raza</label>
-                <input class="input" type="text" id="raza" />
-                <br />
-            </div>
-            <div class="form-elemento">
-                <label for="edad">Edad en meses</label>
-                <input  class="input" type="text" id="edad" />
-                <br />
-            </div>
-            <button class="botons" type="button" onclick="recogerDatos()">Añadir</button>
-        </form>
+        </article>
+        
        </section> 
         <section class="main">
-            
-
             <article class="article1">
                 <div>
 

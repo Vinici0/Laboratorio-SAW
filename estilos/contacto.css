@@ -1,3 +1,9 @@
+.form{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+
 .article-form{
     width: 50%;
     margin: auto;
@@ -5,7 +11,6 @@
 }
 
 .form-elemento{
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -40,16 +45,10 @@ fieldset {
     color: white;
 }
 
-.input{
-    background: #3c3c24;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #c5b41f;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
+label{
+    width: 100%;
 }
+
 
 .form-plan p {
     padding-top: 10px;
@@ -88,4 +87,25 @@ fieldset {
     color: white;
     margin: 16px 0;
     font-size: 16px;
+}
+
+.addBotonContainer{
+    text-align: center;
+}
+
+.addBoton {
+    border: 3px solid;
+    font-size: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin:auto;
+}
+
+td, th{
+    text-align: center;
+    padding: 12px;
+    border: solid #a1781f 1px;
+    
 }
