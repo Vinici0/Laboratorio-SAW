@@ -80,7 +80,7 @@ header .contenedor-texto .texto .nombre {
     overflow: hidden;
     z-index: 1000;
     width: 100%;
-    border: 1px solid #55acee;
+    border: 1px solid rgb(3, 0, 48);
 }
 
 a {
@@ -140,7 +140,8 @@ a {
 /* Estilos para lso Slide de Info */
 
 .slider_info .informacion .subtitulo {
-    color: #55acee;
+    color: rgb(3, 0, 48);
+    font-family: Advent Pro;
     font-size: 3rem;
     line-height: 24px;
     margin-top: 1rem;
@@ -151,6 +152,7 @@ a {
     color: #444;
     font-size: 18px;
     line-height: 24px;
+    font-family: Advent Pro;
 }
 
 .literals {
@@ -217,7 +219,7 @@ a {
 .trabajos .contenedor-trabajos .trabajo {
     width: 23%;
     margin-bottom: 40px;
-    font-family: Geneva, Verdana, sans-serif;
+    font-family: "Potta One";
 }
 
 /* .trabajos {
@@ -252,7 +254,7 @@ a {
 
 .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
     font-weight: 700;
-    color: #3895ea;
+    color: rgb(3, 0, 48);
     margin-bottom: 10px;
 }
 
