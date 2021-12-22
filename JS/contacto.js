@@ -5,15 +5,18 @@ function recogerDatos() {
     let emailCliente = document.getElementById("email_cliente").value;
     let ciudad = document.getElementById("ciudad").value;
     let direccion = document.getElementById("direccion").value;
+    let option = document.getElementById("plan").value;
 
 
     let mensajeFinal = "El cliente con nombre: "+ nombreCliente+
                         ", telefono: "+ telefonoCliente+
                         ", email: "+emailCliente+
-                        " ha elegido un helado con el sabor: "+ciudad+
-                        " en un recipiente de " + direccion+
+                        " ciudad: "+ciudad+
+                        " direccion " + direccion+
                         " con los siguientes extras: ";
 
     
     console.log(mensajeFinal);
+    //document.write(mensajeFinal);
+    alert("Datos registrados con éxito. Enviaremos toda la información necesaria para dar de alta su plan.")
 }
