@@ -138,7 +138,7 @@ header .contenedor-texto .texto .nombre {
     font-size: 25px;
 }
 
-/*ICONOS*/
+/*ICONOS-OPCIONES QUE PRESENTA LA SECCIÓN*/
 
 .objetivos {
     display: flex;
@@ -168,7 +168,7 @@ header .contenedor-texto .texto .nombre {
     color: rgb(250, 151, 2);
 }
 
-/*RESUMEN*/
+/*RESUMEN-OBJETIVO DE LA PÁGINA*/
 .resumen {
     display: flex;
     margin-top: 50px;
@@ -233,7 +233,6 @@ footer .redes-sociales a {
 .opcion {
     width: 25%;
     height: 100%;
-    color: white;
     display: grid;
     padding: 2%;
 }
