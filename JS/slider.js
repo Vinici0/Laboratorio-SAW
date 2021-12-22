@@ -52,6 +52,7 @@ $(document).ready(function(){
     });
 
     $('.botones').children('span').first().addClass('active');
+    
     //----------------------------------------------
     // INFO
     //----------------------------------------------
