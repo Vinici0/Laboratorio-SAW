@@ -132,14 +132,6 @@ header .contenedor-texto .texto .nombre {
 }
 
 /*ICONOS*/
-.resumen{
-    display: flex;
-    margin-top: 50px;
-}
-
-#about{
-    padding-right: 20px;
-}
 
 
 .objetivos{
@@ -147,6 +139,10 @@ header .contenedor-texto .texto .nombre {
     width: 90%;
     align-items: center;
     margin: auto;
+    display: flex;
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .objetivos div{
@@ -167,6 +163,10 @@ header .contenedor-texto .texto .nombre {
 }
 
 
+/*ARTICLE*/
+article{
+    background: rgb(255, 204, 170);
+}
 
 /* ------ ------ FOOTER ------- -----*/
 footer {
