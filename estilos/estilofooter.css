@@ -15,16 +15,23 @@ body {
 }
 
 .contenedor {
-  
     /* background: #ccc;*/
     margin: auto; /*Para cetrar todo*/
     overflow: hidden;
 }
 
+.menu{
+    display: flex;
+    align-items:center;
+}
 
-nav .menu {
+.menu #logo{
+    width: 30%;
+    padding: 5px;
+}
+
+nav .menu div{
     margin: 40px 0;
-    
 }
 
 div .menu a:hover{
@@ -32,6 +39,7 @@ div .menu a:hover{
 }
 
 div .menu a {
+    text-align: right;
     margin: 0 20px;
     color: rgb(0, 0, 0);
     padding-bottom: 10px;

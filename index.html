@@ -29,14 +29,18 @@
         </div>
         <div class="contenedor">
             <nav style="background-color:  rgb(255, 181, 132);" class="menu">
-                <a href="index.html"><img align="center" src="img/logo.png" width="150px" height="76px"></a>
-                <a href=""><img align="center" src="./img/tienda-de-animales.png" width="35px" height="35px"> INICIO</a>
-                <a href=""><img align="center" src="./img/sobrenosotros.png" width="35px" height="35px"> SOBRE
-                    NOSOTROS</a>
-                <a href=""><img align="center" src="./img/servicio.png" width="35px" height="35px">
-                    SERVICIOS</a>
-                <a href=""><img align="center" src="./img/CONTACTO.png" width="35px" height="35px">
-                    CONTACTO</a>
+                <div id="logo">
+                    <a href="index.html"><img align="center" src="img/logo.png" width="150px" height="76px"></a>
+                </div>
+                <div id="menu">
+                    <a href=""><img align="center" src="./img/tienda-de-animales.png" width="35px" height="35px"> INICIO</a>
+                    <a href=""><img align="center" src="./img/sobrenosotros.png" width="35px" height="35px"> SOBRE
+                        NOSOTROS</a>
+                    <a href=""><img align="center" src="./img/servicio.png" width="35px" height="35px">
+                        SERVICIOS</a>
+                    <a href=""><img align="center" src="./img/CONTACTO.png" width="35px" height="35px">
+                        CONTACTO</a>
+                </div>
             </nav>
         </div>
 
@@ -284,7 +288,11 @@
         </footer>
 
     </body>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1700);
+    </script>
 
 </html>

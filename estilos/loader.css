@@ -7,12 +7,12 @@
 }
 
 .loader {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 95px;
     position: absolute;
     top: calc(55vh - 75px);
     left: calc(50vw - 75px);
-    background-image: url(https://mellowmushroom.com/wp-content/themes/mm/images/maker.gif?1638088195);
+    background-image: url(https://i.ibb.co/DzvpgZZ/huellitas.gif);
     background-repeat: no-repeat;
 }
 
