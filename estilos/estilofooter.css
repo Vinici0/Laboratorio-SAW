@@ -1,8 +1,9 @@
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     /*Para que todo tenga la misma cantidad de anchura*/
 }
 
@@ -12,47 +13,61 @@ body {
     font-size: 16px;
 }
 
+
+
 .contenedor {
-  
-    /* background: #ccc;*/
     margin: auto; /*Para cetrar todo*/
     overflow: hidden;
+
 }
 
 /*ESTILOS NAV*/
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu #logo{
+    width: 25%;
+    padding: 5px;
+}
 nav .menu {
     margin: 40px 0;
+
     
 }
 
-div .menu a:hover{
+nav .menu {
+    margin: 40px 0;
+}
+
+div .menu a:hover {
     color: rgb(0, 106, 133);
 }
 
 div .menu a {
-    margin: 0 50px;
+    text-align: right;
+    margin: 0 20px;
     color: rgb(0, 0, 0);
     padding-bottom: 10px;
     display: inline-block;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    font-family: 'Potta One';
-    font-size: 25px;
-   
+    font-family: "Potta One";
+    font-size: 20px;
 }
-nav{
+nav {
     text-align: center;
 }
 /* ------ ------ HEADER ------- -----*/
 header {
-  
     background: url("../img/header.jpg");
     background-position: center;
     max-height: 450px; /*Alto maximo*/
-    font-family: 'Potta One';
+    font-family: "Potta One";
     opacity: 0.8;
 }
-
 
 /*HEADER TITULO*/
 header .contenedor-texto {
@@ -60,27 +75,20 @@ header .contenedor-texto {
     justify-content: right;
     align-content: center;
     margin: 190px 0;
- 
 }
-
-
 
 header .contenedor-texto .texto h1 {
     color: rgb(230, 230, 230);
     margin: 0;
     font-size: 50px;
     opacity: 20;
- 
 }
 
 header .contenedor-texto .texto .nombre {
     margin-bottom: 10px;
     font-size: 50px;
     line-height: 50px;
-  
 }
-
-
 
 /* ------ ------ MAIN ------- -----*/
 .main .contenedor {
@@ -94,7 +102,6 @@ header .contenedor-texto .texto .nombre {
 .main .acerca-de .foto {
     margin-top: -60px;
 }
-
 
 .main .acerca-de .texto {
     color: #000000;
@@ -133,8 +140,7 @@ header .contenedor-texto .texto .nombre {
 
 /*ICONOS*/
 
-
-.objetivos{
+.objetivos {
     display: flex;
     width: 90%;
     align-items: center;
@@ -145,7 +151,7 @@ header .contenedor-texto .texto .nombre {
     text-align: center;
 }
 
-.objetivos div{
+.objetivos div {
     margin-top: 70px;
     width: 90%;
     padding-right: 20px;
@@ -154,25 +160,25 @@ header .contenedor-texto .texto .nombre {
     line-height: 150%;
     color: #000000;
     font-size: 20px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-family: Advent Pro;
 }
 
-.objetivos div h1:hover{
+.objetivos div h1:hover {
     color: rgb(250, 151, 2);
 }
 
 /*RESUMEN*/
-.resumen{
+.resumen {
     display: flex;
     margin-top: 50px;
 }
 
-#about{
+#about {
     padding-right: 20px;
 }
 
-#parrafoAb{
+#parrafoAb {
     padding-left: 20px;
     text-align: left;
     font-size: 20px;
@@ -180,19 +186,22 @@ header .contenedor-texto .texto .nombre {
     font-family: Advent Pro;
 }
 
-#about-titulo{
+#about-titulo {
     color: rgb(250, 151, 2);
 }
 
+
 /*ARTICLE-SLIDER*/
-article{
+
+.article {
+
     background: rgb(255, 204, 170);
 }
 
 /* ------ ------ FOOTER ------- -----*/
 footer {
     padding: 10px 0;
-    font-family: 'Potta One';
+    font-family: "Potta One";
 }
 
 footer .contacto .titulo {
@@ -204,11 +213,9 @@ footer .contacto .titulo {
     text-align: center;
 }
 
-
 footer .redes-sociales {
     background: rgb(255, 181, 132);
     padding: 10px 0;
-
 }
 
 footer .contenedor {
@@ -222,7 +229,6 @@ footer .redes-sociales a {
     display: block;
     font-size: 30px;
     margin: 0 15px;
-  
 }
 .opcion {
     width: 25%;
@@ -230,13 +236,10 @@ footer .redes-sociales a {
     color: white;
     display: grid;
     padding: 2%;
-    
 }
 
-.fondofooter{
+.fondofooter {
     background: url("../img/footer.jpeg");
-    
-    
 }
 
 .opcion a {
@@ -244,8 +247,6 @@ footer .redes-sociales a {
     color: black;
     font-size: 14px;
     margin-top: 20px;
-   
-   
 }
 
 .opcion h2 {
@@ -254,12 +255,10 @@ footer .redes-sociales a {
     color: rgb(3, 0, 48);
 }
 
-.opcion h2:hover{
+.opcion h2:hover {
     color: rgb(0, 106, 133);
 }
 
-.opcion a:hover{
-
-
+.opcion a:hover {
     color: rgb(0, 106, 133);
 }

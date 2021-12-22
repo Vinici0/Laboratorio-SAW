@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://kit.fontawesome.com/0ea7a89597.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+        rel="stylesheet" />
+    <!--FUENTES-->
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Potta One' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/paw-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilofooter.css" />
+    <link rel="stylesheet" href="estilos/loader.css" />
+    <link rel="stylesheet" href="estilos/contacto.css" />
+    <script src="js/contacto.js"></script>
+    <title>HUELLITA♥</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="loader_bg">
+            <div class="loader">
+
+            </div>
+        </div>
+        <div class="contenedor">
+            <nav style="background-color:  rgb(255, 181, 132);" class="menu">
+
+                <div id="logo">
+                    <a href="index.html"><img align="center" src="img/logo.png" width="150px" height="76px"></a>
+                </div>
+                <div id="menu">
+                    <a href=""><img align="center" src="./img/tienda-de-animales.png" width="35px" height="35px">
+                        INICIO</a>
+                    <a href=""><img align="center" src="./img/sobrenosotros.png" width="35px" height="35px"> SOBRE
+                        NOSOTROS</a>
+                    <a href=""><img align="center" src="./img/servicio.png" width="35px" height="35px">
+                        SERVICIOS</a>
+                    <a href=""><img align="center" src="./img/CONTACTO.png" width="35px" height="35px">
+                        CONTACTO</a>
+            </nav>
+        </div>
+       <section class="form">
+        <h1>Calcular Gasto</h1>
+        <article class="article-form">
+            <form class="form-plan">
+                <div class="form-elemento">
+                    <legend><b>Método de pago</b></legend><br>
+                    <label class="metodoPago" for="efectivo"><input type="radio" id="efectivo" />Efectivo</label>
+                    <label class="metodoPago" for="tarjetaC"><input type="radio" id="tarjetaC" />Tarjeta Crédito/Débito</label>
+                    <label class="metodoPago" for="deposito"><input type="radio" id="depostio" />Depósito</label>
+                </div>
+                <div class="form-elemento">
+                    <label for="typePago">Concepto de pago</label>
+                    <select id="conceptoPago" class="controls">
+                        <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
+                        <option value="Vetplan Básico">Consulta medica</option>
+                        <option value="Vetplan Complet">Placa radiográfica</option>
+                        <option value="Vetplan Plus">Esterilización</option>
+                        <option value="Vetplan Plus">Electrocarfiograma</option>
+                        <option value="Vetplan Plus">Exploración ótica</option>
+                        <option value="Vetplan Plus">Test inmunológico</option>
+                        <option value="Vetplan Plus">Limpieza bucal</option>
+                        <option value="Vetplan Plus">Baño general</option>
+                    </select>
+                </div>
+                <div class="form-elemento">
+                    <legend><b>Datos de mascota</b></legend>
+                </div>
+                <div class="form-elemento">
+                    <label for="raza">Tipo de Raza</label>
+                    <input class="controls" type="text" id="raza" />
+                    <br />
+                </div>
+                <div class="form-elemento">
+                    <label for="edad">Edad en meses</label>
+                    <input  class="controls" type="text" id="edad" />
+                    <br />
+                </div>
+                <div class="addBotonContainer">
+                    <button class="botons" > Añadir</button>
+                </div>
+            </form>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>
+                            Método de pago
+                        </th>
+                        <th>
+                            Concepto de pago
+                        </th>
+                        <th>
+                            Valor a pagar
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Efectivo</td>
+                        <td>Consulta medica</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Efectivo</td>
+                        <td>Consulta medica</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        
+       </section> 
+        <section class="main">
+            <article class="article1">
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <h1>Solicitar tu plan</h1>
+                    <p>Si deseas contratar VetPlan, rellena el siguiente formulario y le enviaremos toda la
+                        información necesaria para dar de alta su plan.</p>
+                </div>
+                <div class="article-form">
+
+                    <form class="form-plan">
+
+                        <fieldset>
+                            <legend><b>Datos cliente</b></legend>
+
+                            <label for="nombre_cliente">Nombres completos</label>
+                            <input class="controls" type="text" id="nombre_cliente" />
+                            <br />
+
+                            <label for="direccion">Direccion</label>
+                            <input class="controls" type="text" id="direccion" />
+                            <br />
+
+                            <label for="ciudad">Ciudad</label>
+                            <input class="controls" type="text" id="ciudad" />
+                            <br />
+
+                            <label for="telefono_cliente">Telefono cliente</label>
+                            <input class="controls" type="tel" id="telefono_cliente" />
+                            <br />
+
+                            <label for="email_cliente">Email cliente</label>
+                            <input class="controls" type="email" id="email_cliente" />
+                            <br />
+
+                            <label for="plan">Tipo de plan</label>
+                            <select id="plan">
+                                <option value="" disabled="disabled" selected="">Elige tu plan</option>
+                                <option value="Vetplan Básico">Vetplan Básico</option>
+                                <option value="Vetplan Complet">Vetplan Complet</option>
+                                <option value="Vetplan Plus">Vetplan Plus</option>
+                            </select>
+                            <br />
+
+                        </fieldset>
+
+                        <fieldset>
+                            <legend><b>Datos de mascota</b></legend>
+
+                            <label for="nombre_mascota">Nombre de su mascota</label><br>
+                            <input class="controls" type="text" id="nombre_mascota" />
+                            <br />
+
+                            <label for="raza">Tipo de Raza</label><br>
+                            <input class="controls" type="text" id="raza" />
+                            <br />
+
+                            <label for="edad">Edad en meses</label>
+                            <input class="controls" type="text" id="edad" />
+                            <br />
+
+                        </fieldset>
+
+                        <!-- <input type="submit" value="Enviar" /> -->
+                        <button class="botons" type="button" onclick="recogerDatos()">Calcular Total de Pago</button>
+                        <button class="botons" type="button" onclick="recogerDatos()">Enviar</button>
+                    </form>
+
+                </div>
+                <div>
+                    <table>
+
+                    </table>
+                </div>
+            </article>
+            <aside>
+
+            </aside>
+        </section>
+
+
+        <footer>
+
+            <div class="fondofooter">
+
+                <div class="contenedor">
+
+
+                    <div class="opcion">
+
+                        <h2 style="text-align: center;">LOS HACEMOS SENTIR COMO EN CASA</h2>
+                        <a href="https://clinicaveterinariapetshouse.co/" target="_blank"><img align="center"
+                                src="./img/más.png" width="25px" height="25px"> Más información</a>
+
+
+                    </div>
+                    <div class="opcion">
+                        <h2>Productos y servicios</h2>
+                        <a href=""><img align="center" src="./img/jeringuilla.png" width="25px" height="25px">
+                            Laboratorio</a>
+                        <a href=""><img align="center" src="./img/consultar.png" width="25px" height="25px">
+                            Consulta</a>
+                        <a href=""><img align="center" src="./img/vacunacion.png" width="25px" height="25px">
+                            Vacunación</a>
+                        <a href=""><img align="center" src="./img/medicina.png" width="25px" height="25px">
+                            Desparasitación</a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="opcion">
+                        <h2>CONTACTO</h2>
+                        <a href=""><img align="center" src="./img/correo-electronico.png" width="25px" height="25px">
+                            huellitas25@gmail.com</a>
+                        <a href=""><img align="center" src="./img/ubicacion.png" width="25px"
+                                height="25px">Rosales-Santo Domingo-Ecuador
+                        </a>
+
+
+                    </div>
+                    <div class="opcion">
+                        <h2 style="text-align: center;">VETERINARIA LA HUELLITA♥</h2>
+                        <a id="imagen2" href="#"><img src="./img/vidi.png" width="250px" height="250px" alt=""></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <section class="redes-sociales">
+                <div class="contenedor">
+                    <a href="#" class="huellas"><img src="./img/veterinario.png" width="50px" height="50px" alt=""></a>
+                    <a href="#" class="huellas"><img src="./img/huellas-de-animal.png" width="50px" height="50px"
+                            alt=""></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="huellas"><img src="./img/huellas-de-animal.png" width="50px" height="50px"
+                            alt=""></a>
+                    <a href="#" class="huellas"><img src="./img/veterinario.png" width="50px" height="50px" alt=""></a>
+                </div>
+            </section>
+
+        </footer>
+
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1700);
+    </script>
+
+</html>

@@ -13,8 +13,10 @@
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Potta One' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/paw-solid.svg" type="image/x-icon">
     <link rel="stylesheet" href="estilos/estilofooter.css" />
     <link rel="stylesheet" href="estilos/slider.css" />
+    <link rel="stylesheet" href="estilos/loader.css" />
     <title>HUELLITA♥</title>
 </head>
 
@@ -28,13 +30,20 @@
         </div>
         <div class="contenedor">
             <nav style="background-color:  rgb(255, 181, 132);" class="menu">
-                <a href=""><img align="center" src="./img/tienda-de-animales.png" width="35px" height="35px"> INICIO</a>
-                <a href=""><img align="center" src="./img/servicio.png" width="35px" height="35px">
-                    SERVICIO</a>
-
-                <a href=""><img align="center" src="./img/sobrenosotros.png" width="35px" height="35px"> SOBRE
-                    NOSOTROS</a>
-
+                <div id="logo">
+                    <a href="index.html"><img align="center" src="img/logo.png" width="150px" height="76px"></a>
+                </div>
+                <div id="menu">
+                    <a href=""><img align="center" src="./img/tienda-de-animales.png" width="35px" height="35px">
+                        INICIO</a>
+                    <a href="nosotros.html"><img align="center" src="./img/sobrenosotros.png" width="35px"
+                            height="35px"> SOBRE
+                        NOSOTROS</a>
+                    <a href=""><img align="center" src="./img/servicio.png" width="35px" height="35px">
+                        SERVICIOS</a>
+                    <a href=""><img align="center" src="./img/CONTACTO.png" width="35px" height="35px">
+                        CONTACTO</a>
+                </div>
             </nav>
         </div>
 
@@ -67,7 +76,8 @@
                             <span class="monkey">Bienvenidos a la Clínica Veterinaria: </span> <span class="monkey-2">
                                 HUELLITAS
                             </span> <br>
-                        <p style="text-align: justify;">Trabajamos todos los días por hacer feliz y mejorar la calidad
+                        <p style="text-align: justify;">Trabajamos todos los días por hacer feliz y mejorar la
+                            calidad
                             de vida de sus mascotas,
                             brindamos los siguientes servicios veterinarios: consulta, cirugía, desparasitación,
                             laboratorio veterinario, peluquería canina, peluquería felina, profilaxis, cirugía,
@@ -220,8 +230,8 @@
                     <div class="opcion">
 
                         <h2 style="text-align: center;">LOS HACEMOS SENTIR COMO EN CASA</h2>
-                        <a href="https://clinicaveterinariapetshouse.co/" target="_blank"><img align="center" src="./img/más.png"
-                                width="25px" height="25px"> Más información</a>
+                        <a href="https://clinicaveterinariapetshouse.co/" target="_blank"><img align="center"
+                                src="./img/más.png" width="25px" height="25px"> Más información</a>
 
 
                     </div>
@@ -281,7 +291,11 @@
         </footer>
 
     </body>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1700);
+    </script>
 
 </html>
