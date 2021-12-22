@@ -95,16 +95,6 @@ header .contenedor-texto .texto .nombre {
     margin-top: -60px;
 }
 
-.prue-fot:hover{
-    filter: sepia(60%);
-}
-
-
-.main .acerca-de .foto img {
-    vertical-align: top;
-    border-radius: 50%;
-    border: 5px solid rgba(255, 255, 255, 0.2);
-}
 
 .main .acerca-de .texto {
     color: #000000;
@@ -136,62 +126,6 @@ header .contenedor-texto .texto .nombre {
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
-
-.main .acerca-de .texto .bold {
-    text-decoration: underline;
-}
-
-.main .calculo input[type="altura"],
-.main .calculo input[type="peso"] {
-    width: 10%;
-}
-
-.main .trabajos {
-    background: #f2f2f2;
-    padding: 60px 0; /*Para el IMC*/
-}
-
-.main .trabajos .contenedor {
-    overflow: hidden; /*SOLUCIONAR POSIBLES ERRORES DE ESPACIADO*/
-}
-
-.main .trabajos .titulo {
-    font-size: 34px;
-    line-height: 34px;
-    margin-bottom: 40px;
-    font-weight: 300;
-    color: #323068;
-    text-align: center;
-}
-
-.main .trabajos .contenedor-trabajos {
-    /*PARA ORDENAR LAS IMEGENES SEGUN EL TAMAÑO*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
-}
-
-.main .trabajos .contenedor-trabajos .trabajo {
-    width: 23%;
-    margin-bottom: 40px;
-}
-
-.main .trabajos .contenedor-trabajos .trabajo .thumb {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.main .trabajos .contenedor-trabajos .trabajo .thumb img {
-    width: 100%;
-    vertical-align: top;
-    border-radius: 4px;
-    box-shadow: 0px 15px 5px rgba(0,0,0,0.50);
-    cursor: pointer;
-}
-
-
 
 
 /* ------ ------ FOOTER ------- -----*/
