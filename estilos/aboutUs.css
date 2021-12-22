@@ -140,7 +140,7 @@ a {
 /* Estilos para lso Slide de Info */
 
 .slider_info .informacion .subtitulo {
-    color: rgb(3, 0, 48);
+    color: #ff9650;
     font-family: Advent Pro;
     font-size: 3rem;
     line-height: 24px;
@@ -194,6 +194,7 @@ a {
     font-size: 3rem;
     font-family: Advent Pro;
     font-weight: 900;
+    color: #ff9650;
 }
 
 .trabajos .titulo {
@@ -254,8 +255,12 @@ a {
 
 .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
     font-weight: 700;
-    color: rgb(3, 0, 48);
+    color: #ff9650;
     margin-bottom: 10px;
+}
+
+.trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+    color: rgb(3, 0, 48);
 }
 
 /* PROFESIONALES */
