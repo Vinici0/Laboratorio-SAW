@@ -17,18 +17,18 @@
     <link rel="stylesheet" href="estilos/estilofooter.css" />
     <link rel="stylesheet" href="estilos/loader.css" />
     <link rel="stylesheet" href="estilos/contacto.css" />
-    <script src="js/contacto.js"></script>
+    <script src="JS/contacto.js"></script>
     <title>HUELLITA♥</title>
 </head>
 
 <body>
 
     <body>
-        <div class="loader_bg">
+        <!--<div class="loader_bg">
             <div class="loader">
 
             </div>
-        </div>
+        </div>-->
         <div class="contenedor">
             <nav style="background-color:  rgb(255, 181, 132);" class="menu">
 
@@ -46,76 +46,79 @@
                         CONTACTO</a>
             </nav>
         </div>
-       <section class="form">
-        <h1>Calcular Gasto</h1>
-        <article class="article-form">
-            <form class="form-plan">
-                <div class="form-elemento">
-                    <legend><b>Método de pago</b></legend><br>
-                    <label class="metodoPago" for="efectivo"><input type="radio" id="efectivo" />Efectivo</label>
-                    <label class="metodoPago" for="tarjetaC"><input type="radio" id="tarjetaC" />Tarjeta Crédito/Débito</label>
-                    <label class="metodoPago" for="deposito"><input type="radio" id="depostio" />Depósito</label>
+        <section class="form">
+            <h1>Calcular Gasto</h1>
+            <article class="article-form">
+                <form class="form-plan" id="form-plan">
+                    <div class="form-elemento">
+                        <legend><b>Método de pago</b></legend><br>
+                        <input type="radio" id="efectivo" name="metodoPago" value="Efectivo" /><label class="metodoPago"
+                            for="efectivo">Efectivo</label>
+                        <input type="radio" id="tarjeta" name="metodoPago" value="Tarjeta" /><label class="metodoPago"
+                            for="tarjeta">Tarjeta Crédito/Débito</label>
+                        <input type="radio" id="deposito" name="metodoPago" value="Deposito" /><label class="metodoPago"
+                            for="deposito">Depósito</label>
+                    </div>
+                    <div class="form-elemento">
+                        <label for="pagoConcepto">Concepto de pago</label>
+                        <select id="pagoConcepto" name="pagoConcepto" class="controls">
+                            <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
+                            <option value="Consulta medica">Consulta medica</option>
+                            <option value="Placa radiográfica">Placa radiográfica</option>
+                            <option value="Esterilización">Esterilización</option>
+                            <option value="Electrocarfiograma">Electrocarfiograma</option>
+                            <option value="Exploración ótica">Exploración ótica</option>
+                            <option value="Test inmunológico">Test inmunológico</option>
+                            <option value="Limpieza bucal">Limpieza bucal</option>
+                            <option value="Baño general">Baño general</option>
+                        </select>
+                    </div>
+                    <div class="form-elemento">
+                        <legend><b>Datos de mascota</b></legend>
+                    </div>
+                    <div class="form-elemento">
+                        <label for="raza">Tipo de Raza</label>
+                        <input class="controls" type="text" id="raza" name="raza" />
+                        <br />
+                    </div>
+                    <div class="form-elemento">
+                        <label for="edad">Edad en meses</label>
+                        <input class="controls" type="text" id="edad" name="edad" />
+                        <br />
+                    </div>
+                    <div class="addBotonContainer">
+                        <button class="botons" onclick="recogerDatos()"> Añadir</button>
+                    </div>
+                </form>
+                <div class="table">
+                    <table id="metodoTable">
+                        <tr>
+                            <th>
+                                Método de pago
+                            </th>
+                            <th>
+                                Concepto de pago
+                            </th>
+                            <th>
+                                Valor a pagar
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Efectivo</td>
+                            <td>Consulta medica</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Efectivo</td>
+                            <td>Consulta medica</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="form-elemento">
-                    <label for="typePago">Concepto de pago</label>
-                    <select id="conceptoPago" class="controls">
-                        <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
-                        <option value="Vetplan Básico">Consulta medica</option>
-                        <option value="Vetplan Complet">Placa radiográfica</option>
-                        <option value="Vetplan Plus">Esterilización</option>
-                        <option value="Vetplan Plus">Electrocarfiograma</option>
-                        <option value="Vetplan Plus">Exploración ótica</option>
-                        <option value="Vetplan Plus">Test inmunológico</option>
-                        <option value="Vetplan Plus">Limpieza bucal</option>
-                        <option value="Vetplan Plus">Baño general</option>
-                    </select>
-                </div>
-                <div class="form-elemento">
-                    <legend><b>Datos de mascota</b></legend>
-                </div>
-                <div class="form-elemento">
-                    <label for="raza">Tipo de Raza</label>
-                    <input class="controls" type="text" id="raza" />
-                    <br />
-                </div>
-                <div class="form-elemento">
-                    <label for="edad">Edad en meses</label>
-                    <input  class="controls" type="text" id="edad" />
-                    <br />
-                </div>
-                <div class="addBotonContainer">
-                    <button class="botons" > Añadir</button>
-                </div>
-            </form>
-            <div class="table">
-                <table>
-                    <tr>
-                        <th>
-                            Método de pago
-                        </th>
-                        <th>
-                            Concepto de pago
-                        </th>
-                        <th>
-                            Valor a pagar
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>Efectivo</td>
-                        <td>Consulta medica</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Efectivo</td>
-                        <td>Consulta medica</td>
-                        <td>10</td>
-                    </tr>
-                </table>
-            </div>
-        </article>
-        
-       </section> 
-        <section class="main">
+            </article>
+
+        </section>
+        <!--<section class="main">
             <article class="article1">
                 <div>
 
@@ -183,7 +186,7 @@
 
                         </fieldset>
 
-                        <!-- <input type="submit" value="Enviar" /> -->
+                         <input type="submit" value="Enviar" />
                         <button class="botons" type="button" onclick="recogerDatos()">Calcular Total de Pago</button>
                         <button class="botons" type="button" onclick="recogerDatos()">Enviar</button>
                     </form>
@@ -198,7 +201,7 @@
             <aside>
 
             </aside>
-        </section>
+        </section> -->
 
 
         <footer>
@@ -272,6 +275,26 @@
         </footer>
 
     </body>
+    <script>
+        const form = document.getElementById("form-plan");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            let metodoPData = new FormData(form);
+            let metodoTable = document.getElementById("metodoTable");
+            let newPagoTableRef = metodoTable.insertRow(-1);
+
+            let newTypeCellRef = newPagoTableRef.insertCell(0);
+            newTypeCellRef.textContent = metodoPData.get("metodoPago")
+
+            newTypeCellRef = newPagoTableRef.insertCell(1);
+            newTypeCellRef.textContent = metodoPData.get("pagoConcepto")
+
+            newTypeCellRef = newPagoTableRef.insertCell(2);
+            newTypeCellRef.textContent = metodoPData.get("metodoPago");
+
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         setTimeout(function () {
