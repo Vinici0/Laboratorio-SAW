@@ -4,18 +4,21 @@ main{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-
+    font-family: "Open Sans", sans-serif;
 }
 
 .main{
     width: 80%;
     margin: 70px 0 0 0;
+    font-family: "Open Sans", sans-serif;
 }
 
 img{
     cursor: pointer;
+    font-family: "Open Sans", sans-serif;
 }
 
 .servicios{
     margin: 50px 0 0 0;
+    font-family: "Open Sans", sans-serif;
 }
