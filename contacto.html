@@ -24,11 +24,11 @@
 <body>
 
     <body>
-        <!--<div class="loader_bg">
+        <div class="loader_bg">
             <div class="loader">
 
             </div>
-        </div>-->
+        </div>
         <div class="contenedor">
             <nav style="background-color:  rgb(255, 181, 132);" class="menu">
 
@@ -60,20 +60,20 @@
                             for="deposito">Depósito</label>
                     </div>
                     <div class="form-elemento">
-                        <label for="pagoConcepto">Concepto de pago</label>
+                        <legend><b>Concepto de pago</b></legend><br>
                         <select id="pagoConcepto" name="pagoConcepto" class="controls">
                             <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
-                            <option value="Consulta medica">Consulta medica</option>
-                            <option value="Placa radiográfica">Placa radiográfica</option>
-                            <option value="Esterilización">Esterilización</option>
-                            <option value="Electrocarfiograma">Electrocarfiograma</option>
-                            <option value="Exploración ótica">Exploración ótica</option>
-                            <option value="Test inmunológico">Test inmunológico</option>
-                            <option value="Limpieza bucal">Limpieza bucal</option>
-                            <option value="Baño general">Baño general</option>
+                            <option id="consulta" value="6.00">Consulta medica</option>
+                            <option id="radiografia" value="24.00">Radiográfia simple </option>
+                            <option id="esterilizacion" value="85.00">Esterilización </option>
+                            <option id="electrocardiograma" value="21.00">Electrocardiograma</option>
+                            <option id="otica" value="26.00">Exploración ótica</option>
+                            <option id="rabia" value="14.00">Vacuna de la rabia</option>
+                            <option id="bucal" value="12.00">Limpieza bucal</option>
+                            <option id="banio" value="16.00">Baño general</option>
                         </select>
                     </div>
-                    <div class="form-elemento">
+                    <!--<div class="form-elemento">
                         <legend><b>Datos de mascota</b></legend>
                     </div>
                     <div class="form-elemento">
@@ -85,123 +85,34 @@
                         <label for="edad">Edad en meses</label>
                         <input class="controls" type="text" id="edad" name="edad" />
                         <br />
-                    </div>
+                    </div> -->
                     <div class="addBotonContainer">
-                        <button class="botons" onclick="recogerDatos()"> Añadir</button>
+                        <button class="botons"> Añadir</button>
                     </div>
                 </form>
                 <div class="table">
                     <table id="metodoTable">
-                        <tr>
-                            <th>
-                                Método de pago
-                            </th>
-                            <th>
-                                Concepto de pago
-                            </th>
-                            <th>
-                                Valor a pagar
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>Efectivo</td>
-                            <td>Consulta medica</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Efectivo</td>
-                            <td>Consulta medica</td>
-                            <td>10</td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    Método de pago
+                                </th>
+                                <th>
+                                    Concepto de pago
+                                </th>
+                                <th>
+                                    Valor a pagar
+                                </th>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </article>
 
         </section>
-        <!--<section class="main">
-            <article class="article1">
-                <div>
+        <section class="main">
 
-                </div>
-                <div>
-
-                </div>
-                <div>
-                    <h1>Solicitar tu plan</h1>
-                    <p>Si deseas contratar VetPlan, rellena el siguiente formulario y le enviaremos toda la
-                        información necesaria para dar de alta su plan.</p>
-                </div>
-                <div class="article-form">
-
-                    <form class="form-plan">
-
-                        <fieldset>
-                            <legend><b>Datos cliente</b></legend>
-
-                            <label for="nombre_cliente">Nombres completos</label>
-                            <input class="controls" type="text" id="nombre_cliente" />
-                            <br />
-
-                            <label for="direccion">Direccion</label>
-                            <input class="controls" type="text" id="direccion" />
-                            <br />
-
-                            <label for="ciudad">Ciudad</label>
-                            <input class="controls" type="text" id="ciudad" />
-                            <br />
-
-                            <label for="telefono_cliente">Telefono cliente</label>
-                            <input class="controls" type="tel" id="telefono_cliente" />
-                            <br />
-
-                            <label for="email_cliente">Email cliente</label>
-                            <input class="controls" type="email" id="email_cliente" />
-                            <br />
-
-                            <label for="plan">Tipo de plan</label>
-                            <select id="plan">
-                                <option value="" disabled="disabled" selected="">Elige tu plan</option>
-                                <option value="Vetplan Básico">Vetplan Básico</option>
-                                <option value="Vetplan Complet">Vetplan Complet</option>
-                                <option value="Vetplan Plus">Vetplan Plus</option>
-                            </select>
-                            <br />
-
-                        </fieldset>
-
-                        <fieldset>
-                            <legend><b>Datos de mascota</b></legend>
-
-                            <label for="nombre_mascota">Nombre de su mascota</label><br>
-                            <input class="controls" type="text" id="nombre_mascota" />
-                            <br />
-
-                            <label for="raza">Tipo de Raza</label><br>
-                            <input class="controls" type="text" id="raza" />
-                            <br />
-
-                            <label for="edad">Edad en meses</label>
-                            <input class="controls" type="text" id="edad" />
-                            <br />
-
-                        </fieldset>
-
-                         <input type="submit" value="Enviar" />
-                        <button class="botons" type="button" onclick="recogerDatos()">Calcular Total de Pago</button>
-                        <button class="botons" type="button" onclick="recogerDatos()">Enviar</button>
-                    </form>
-
-                </div>
-                <div>
-                    <table>
-
-                    </table>
-                </div>
-            </article>
-            <aside>
-
-            </aside>
-        </section> -->
+        </section>
 
 
         <footer>
@@ -275,9 +186,8 @@
         </footer>
 
     </body>
-    <script>
+    <script type="text/javascript">
         const form = document.getElementById("form-plan");
-
         form.addEventListener("submit", function (e) {
             e.preventDefault();
             let metodoPData = new FormData(form);
@@ -285,16 +195,22 @@
             let newPagoTableRef = metodoTable.insertRow(-1);
 
             let newTypeCellRef = newPagoTableRef.insertCell(0);
-            newTypeCellRef.textContent = metodoPData.get("metodoPago")
+            newTypeCellRef.textContent = metodoPData.get("metodoPago");
 
             newTypeCellRef = newPagoTableRef.insertCell(1);
-            newTypeCellRef.textContent = metodoPData.get("pagoConcepto")
+            var concepto = document.getElementById("pagoConcepto");
+            var selected = concepto.options[concepto.selectedIndex].text;
+            newTypeCellRef.textContent = selected;
 
-            newTypeCellRef = newPagoTableRef.insertCell(2);
-            newTypeCellRef.textContent = metodoPData.get("metodoPago");
+            newTypeCellRef = newPagoTableRef.insertCell(2)
+            var valor = document.getElementById("pagoConcepto").value;
+            newTypeCellRef.textContent = valor;
+
+            alert("Dato añadido con éxito")
 
         });
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         setTimeout(function () {
