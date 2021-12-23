@@ -48,74 +48,104 @@
         </div>
 
         <section class="main">
-            
+            <div id="espacio">
+                <h1 id="titulo1">Contáctanos</h1>
+                <hr>
+                <p>Queremos darle a tu mascota la atención médica que necesita. Comunícate con nosotros o visitanos. En
+                    Huellitas estamos listos para ayudarte.</p>
+                <form action="">
+                    <div class="half">
+                        <div class="item">
+                            <label for="name">NOMBRE</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="item">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id="email">
+                        </div>
+                    </div>
+                    <div class="full">
+                        <label for="message">MENSAJE</label>
+                        <textarea name="" id="message"></textarea>
+                    </div>
+                    <div class="action">
+                        <input type="submit" value="SEND MESSAGE">
+                        <input type="reset" value="RESET">
+                    </div>
+                    <div class="icons">
+                        <a href="" class="fa fa-twitter"></a>
+                        <a href="" class="fa fa-facebook"></a>
+                        <a href="" class="fa fa-instagram"></a>
+                        <a href="" class="fa fa-github"></a>
+                    </div>
+                </form>
+            </div>
+            <div id="espacio">
+                <img src="https://www.dogtorscat.com/wp-content/uploads/2019/08/img-contacto.jpg" alt="medico"
+                    width="588" height="511">
+            </div>
         </section>
 
         <section class="form">
-            <h1>Calcular Gasto</h1>
-            <article class="article-form">
-                <form class="form-plan" id="form-plan">
-                    <div class="form-elemento">
-                        <legend><b>Método de pago</b></legend><br>
-                        <input type="radio" id="efectivo" name="metodoPago" value="Efectivo" /><label class="metodoPago"
-                            for="efectivo">Efectivo</label>
-                        <input type="radio" id="tarjeta" name="metodoPago" value="Tarjeta" /><label class="metodoPago"
-                            for="tarjeta">Tarjeta Crédito/Débito</label>
-                        <input type="radio" id="deposito" name="metodoPago" value="Deposito" /><label class="metodoPago"
-                            for="deposito">Depósito</label>
+            <div id="espacio">
+                <h1 id="titulo1">Ver Precios</h1>
+                <hr>
+                <article class="article-form">
+                    <form class="form-plan" id="form-plan">
+                        <div class="form-elemento">
+                            <legend><b>Método de pago</b></legend><br>
+                            <input type="radio" id="efectivo" name="metodoPago" value="Efectivo" /><label
+                                class="metodoPago" for="efectivo">Efectivo</label>
+                            <input type="radio" id="tarjeta" name="metodoPago" value="Tarjeta Crédito/Débito" /><label
+                                class="metodoPago" for="tarjeta">Tarjeta Crédito/Débito</label>
+                            <input type="radio" id="deposito" name="metodoPago" value="Deposito" /><label
+                                class="metodoPago" for="deposito">Depósito</label>
+                        </div>
+                        <div class="form-elemento">
+                            <legend><b>Concepto de pago</b></legend><br>
+                            <select id="pagoConcepto" name="pagoConcepto" class="controls">
+                                <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
+                                <option id="consulta" value="6.00">Consulta medica</option>
+                                <option id="radiografia" value="24.00">Radiográfia simple </option>
+                                <option id="esterilizacion" value="85.00">Esterilización </option>
+                                <option id="electrocardiograma" value="21.00">Electrocardiograma</option>
+                                <option id="otica" value="26.00">Exploración ótica</option>
+                                <option id="rabia" value="14.00">Vacuna de la rabia</option>
+                                <option id="bucal" value="12.00">Limpieza bucal</option>
+                                <option id="banio" value="16.00">Baño general</option>
+                            </select>
+                        </div>
+                        <div class="addBotonContainer">
+                            <button class="botons"> Añadir</button>
+                        </div>
+                    </form>
+                    <div class="table">
+                        <table id="metodoTable">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        Método de pago
+                                    </th>
+                                    <th>
+                                        Concepto de pago
+                                    </th>
+                                    <th>
+                                        Valor a pagar
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="form-elemento">
-                        <legend><b>Concepto de pago</b></legend><br>
-                        <select id="pagoConcepto" name="pagoConcepto" class="controls">
-                            <option value="" disabled="disabled" selected="">Elige el concepto de pago</option>
-                            <option id="consulta" value="6.00">Consulta medica</option>
-                            <option id="radiografia" value="24.00">Radiográfia simple </option>
-                            <option id="esterilizacion" value="85.00">Esterilización </option>
-                            <option id="electrocardiograma" value="21.00">Electrocardiograma</option>
-                            <option id="otica" value="26.00">Exploración ótica</option>
-                            <option id="rabia" value="14.00">Vacuna de la rabia</option>
-                            <option id="bucal" value="12.00">Limpieza bucal</option>
-                            <option id="banio" value="16.00">Baño general</option>
-                        </select>
-                    </div>
-                    <!--<div class="form-elemento">
-                        <legend><b>Datos de mascota</b></legend>
-                    </div>
-                    <div class="form-elemento">
-                        <label for="raza">Tipo de Raza</label>
-                        <input class="controls" type="text" id="raza" name="raza" />
-                        <br />
-                    </div>
-                    <div class="form-elemento">
-                        <label for="edad">Edad en meses</label>
-                        <input class="controls" type="text" id="edad" name="edad" />
-                        <br />
-                    </div> -->
-                    <div class="addBotonContainer">
-                        <button class="botons"> Añadir</button>
-                    </div>
-                </form>
-                <div class="table">
-                    <table id="metodoTable">
-                        <tbody>
-                            <tr>
-                                <th>
-                                    Método de pago
-                                </th>
-                                <th>
-                                    Concepto de pago
-                                </th>
-                                <th>
-                                    Valor a pagar
-                                </th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </article>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div id="espacio">
+                <h1 id="titulo1" id="ubicacion">Ubicación</h1>
+                <hr>
+            </div>
             <article>
-                <h2 id="ubicacion">Ubicación</h2>
-                <hr id="hr">
                 <div class="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15959.115859167747!2d-79.17873549668754!3d-0.2544863113485944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1638089330849!5m2!1sen!2sec"
@@ -123,8 +153,6 @@
                 </div>
             </article>
         </section>
-
-
 
         <footer>
 
