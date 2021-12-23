@@ -191,7 +191,7 @@ header .contenedor-texto .texto .nombre {
 }
 
 
-/*ARTICLE-SLIDER*/
+/*---ARTICLE-SLIDER----*/
 
 .article {
 
@@ -233,6 +233,7 @@ footer .redes-sociales a {
 .opcion {
     width: 25%;
     height: 100%;
+    
     display: grid;
     padding: 2%;
 }
