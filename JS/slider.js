@@ -1,9 +1,32 @@
-$(document).ready(function(){
+const subtitle = document.querySelectorAll('.subtitulo');
+const texto = document.querySelectorAll('.texto');
+const literals = document.querySelectorAll('.literal');
 
+async function obtenerDatos() {
+    const response = await fetch("http://127.0.0.1:5500/JS/slider.json");
+    const json = await response.json();
+
+    subtitle.forEach(function (datos, index) {
+        datos.textContent = json[index].title;
+    });
+
+    texto.forEach(function (datos, index) {
+        datos.textContent = json[index].texto;
+    });
+
+    literals.forEach(function (datos, index) {
+        datos.textContent = json[1].literals[index];
+        datos.style.fontFamily = "Advent Pro";
+    });
+}
+
+obtenerDatos();
+
+$(document).ready(function () {
     let info = {
         padre: $('#info'),
-        numeroSlider:  $('#info').children('.slide').length,
-        posicion: 1  
+        numeroSlider: $('#info').children('.slide').length,
+        posicion: 1
     };
 
     info.padre.children('.slide').first().css({
@@ -12,8 +35,8 @@ $(document).ready(function(){
 
 
     // Función para que se pueda repetir varias veces por el cambio de tamaño de la pagina
-     
-    let altoInfo = function(){
+
+    let altoInfo = function () {
         let alto = info.padre.children('.active').outerHeight()
         info.padre.animate({
             'height': alto + 'px'
@@ -26,11 +49,11 @@ $(document).ready(function(){
 
     let altoContenedor = () => {
         let altoVentana = $(window).height();
-        if(altoVentana <= $('#contenedor').outerHeight()+200){
+        if (altoVentana <= $('#contenedor').outerHeight() + 200) {
             $('#contenedor').css({
                 'height': ''
             });
-        } else{
+        } else {
             $('#contenedor').css({
                 'height': altoVentana + 'px'
             });
@@ -39,29 +62,29 @@ $(document).ready(function(){
 
     altoInfo();
     altoContenedor();
-    
+
     // Para saber cuando la pagina cambie de tamaño, ejecutara la función altoBanner
-    $(window).resize(function(){
+    $(window).resize(function () {
         altoInfo();
         altoContenedor();
     });
 
     // Automatizar la creación de los botones para saber cuantos articulos tinene nuestro slider
-    $('#info').children('.slide').each(function (){
+    $('#info').children('.slide').each(function () {
         $('.botones').append('<span>')
     });
 
     $('.botones').children('span').first().addClass('active');
-    
+
     //----------------------------------------------
     // INFO
     //----------------------------------------------
 
     // Boton siguiente
-    $('#info-next').on('click', function(valor){
+    $('#info-next').on('click', function (valor) {
         valor.preventDefault()
 
-         if(info.posicion < info.numeroSlider){
+        if (info.posicion < info.numeroSlider) {
 
             // Asegurarnos de que todos los sliders empiecen desde la derecha
             info.padre.children().not('.active').css({
@@ -82,45 +105,45 @@ $(document).ready(function(){
 
             info.posicion = info.posicion + 1;
 
-         } else{
+        } else {
             //  Hacemos que el slide activo (es decir el ultimo), se anime hacia la derecha
-             $('#info .active').animate({
-                 'left': '-100%'
-             });
+            $('#info .active').animate({
+                'left': '-100%'
+            });
 
             //  Seleccionamos todos los slides que no tengan la clase .active
             // +y los posicionamos a la derecha
-             info.padre.children().not('.active').css({
-                 'left': '100%'
-             });
+            info.padre.children().not('.active').css({
+                'left': '100%'
+            });
 
             //  Eliminar la clase active y se la ponemos al primer elemento
-             // Despues lo animamos
-             $('#info .active').removeClass('active')
-             info.padre.children('.slide').first().addClass('active').animate({
-                 'left': '0'
-             });
+            // Despues lo animamos
+            $('#info .active').removeClass('active')
+            info.padre.children('.slide').first().addClass('active').animate({
+                'left': '0'
+            });
 
-             $('.botones').children('.active').removeClass('active');
-             $('.botones').children('span').first().addClass('active');
+            $('.botones').children('.active').removeClass('active');
+            $('.botones').children('span').first().addClass('active');
 
             //  Reseteamos la posición a 1
-             info.posicion = 1;
-         }
+            info.posicion = 1;
+        }
 
-         altoInfo();
+        altoInfo();
     });
 
     // Boton Anterior
-    $('#info-prev').on('click', function(valor){
+    $('#info-prev').on('click', function (valor) {
         valor.preventDefault()
 
-        if(info.posicion > 1){
+        if (info.posicion > 1) {
             // Manda todas las imagenes a la izquierda
             info.padre.children().not('.active').css({
                 'left': '-100%'
             });
-    
+
             $('#info .active').animate({
                 'left': '100%'
             });
@@ -133,7 +156,7 @@ $(document).ready(function(){
 
             info.posicion = info.posicion - 1;
 
-        } else{
+        } else {
             info.padre.children().not('.active').css({
                 'left': '-100%'
             });

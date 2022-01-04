@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Clínica Veterinaria Huellitas",
+        "texto": "Somos una veterinaria con veterinarios profresinales que diagnostican y tratan a los animales enfermos y heridos. Exportos en la prevención de la enfermedad y la mala salud, por ejemplo, mediante vacunaciones y prestando asesoramiento a los propietarios. Algunos veterinarios se especializan, por ejemplo en animales domésticos, ganado, caballos y animales de zoológico, por supuesto que estas especializaciones estan en funciones tempranas"
+    },
+    {
+        "title": "Principios",
+        "texto": " Toda labor es fundamentada en la ciencia del Bienestar Animal. <br> Lo que involucra el bienestar animal se define como un estado de salud física y mental permanente del animal en armonía con el medio. Este estado se basa en el respeto de Las cinco libertades",
+        "literals": [
+            "Libertad de hambre, sed y malnutrición",
+            "Libertad de miedo, ansiedad y angustia",
+            "Libertad de incomodidad por condiciones físicas o térmicas",
+            "Libertad de dolor, lesiones y enfermedades",
+            "Libertad para expresar sus comportamientos naturales"
+        ]
+    },
+    {
+        "title": "Misión",
+        "texto": "Ofrecer y realizar servicios vetérinarios de gran calidad y alto nivel técnico y científico, dirigidos a nuestros clientes y asus mascotas para satisfacer con excelentecia sus necesidades"
+    },
+    {
+        "title": "Visión",
+        "texto": "Ser una veterinaria autosustentable y muy productible, reconocida ocmo referente nacional en bienestar animal, responsable del cambio en la relación humano - animal en el Ecuador"
+    }
+]
