@@ -71,5 +71,5 @@ function sumar() {
     for (x of data) {
         sumatotal = sumatotal + x.total;
     }
-    document.querySelector("#total").innerHTML = "Total " + sumatotal;
+    document.querySelector("#total").innerHTML = "<b>Total " + sumatotal +"</b>";
 }

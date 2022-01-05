@@ -126,17 +126,17 @@ header .contenedor-texto .texto .nombre {
 
 #lista{
     margin-top: 20px;
-    
 }
+
 .th{
-    text-align: center;
     background-color: #cf9529 ;
     border: solid #a1781f 1px;
+    font-weight: bolder;
 }
 
 .section-json{
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     width: 80%;
 }
 
