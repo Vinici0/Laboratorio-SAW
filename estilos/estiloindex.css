@@ -124,6 +124,23 @@ header .contenedor-texto .texto .nombre {
     font-size: 45px;
 }
 
+#lista{
+    margin-top: 20px;
+    
+}
+.th{
+    text-align: center;
+    background-color: #cf9529 ;
+    border: solid #a1781f 1px;
+}
+
+.section-json{
+    margin-top: 50px;
+    margin-bottom: 200px;
+    width: 80%;
+}
+
+
 .texto .monkey {
     font-size: 1rem;
     font-weight: 700;
