@@ -3,9 +3,10 @@ const texto = document.querySelectorAll('.texto');
 const literals = document.querySelectorAll('.literal');
 
 async function obtenerDatos() {
-    const response = await fetch("https://vinici0.github.io/Laboratorio-SAW/JS/slider.json");
+    const response = await fetch("https://github.com/Vinici0/Laboratorio-SAW/blob/main/JS/slider.JSON");
     const json = await response.json();
 
+    console.log(json)
     subtitle.forEach(function (datos, index) {
         datos.textContent = json[index].title;
     });
