@@ -19,12 +19,12 @@ function agregar() {
         "total": total
     });
 
-    //convertir el arreglo a json
-    console.log(JSON.stringify(data));
-
     var id_row = 'row' + cant;
-    var fila = '<tr id=' + id_row + '><td>' + nombre + '</td><td>' + precio + '</td><td>' + cantidad + '</td><td>' + total + 
-                '</td><td><a href="#" class="btn btn-danger" onclick="eliminar(' + cant + ')";>Eliminar</a> &nbsp <a href="#" class="btn btn-danger" onclick="cantidad(' + cant + ')";>Editar Cantidad</a></td></tr>';
+    var fila = '<tr id=' + id_row + '><td>' + nombre + '</td><td>' + precio + 
+                '</td><td>' + cantidad + '</td><td>' + total + 
+                '</td><td><a href="#" class="btn btn-danger" onclick="eliminar(' 
+                + cant + ')";>Eliminar</a> &nbsp <a href="#" class="btn btn-danger" onclick="cantidad(' 
+                + cant + ')";>Editar Cantidad</a></td></tr>';
     //agregar fila a la tabla
     $("#lista").append(fila);
     $("#nombre").val('');
@@ -33,13 +33,15 @@ function agregar() {
     $("#nombre").focus();
     cant++;
     sumar();
+
+    //convertir el arreglo a json
+    console.log(JSON.stringify(data));
 }
 
 function eliminar(row) {
-    //remueve la fila de la tabla html
+    //remueve la fila de la tabla
     $("#row" + row).remove();
-    //remover el elmento del arreglo
-    //data.splice(row,1);
+    //remover el elemento del arreglo
     //buscar el id a eliminar
     var i = 0;
     var pos = -1;
@@ -50,6 +52,7 @@ function eliminar(row) {
         }
         i++;
     }
+    //data.splice(row,1);
     data.splice(pos, 1);
     sumar();
 }
