@@ -1,21 +1,49 @@
+const data = [
+    {
+        title: "Clínica Veterinaria Huellitas",
+        texto: "Somos una veterinaria con veterinarios profresinales que diagnostican y tratan a los animales enfermos y heridos. Exportos en la prevención de la enfermedad y la mala salud, por ejemplo, mediante vacunaciones y prestando asesoramiento a los propietarios. Algunos veterinarios se especializan, por ejemplo en animales domésticos, ganado, caballos y animales de zoológico, por supuesto que estas especializaciones estan en funciones tempranas"
+    },
+    {
+        title: "Principios",
+        texto: " Toda labor es fundamentada en la ciencia del Bienestar Animal. <br> Lo que involucra el bienestar animal se define como un estado de salud física y mental permanente del animal en armonía con el medio. Este estado se basa en el respeto de Las cinco libertades",
+        literals: [
+            "Libertad de hambre, sed y malnutrición",
+            "Libertad de miedo, ansiedad y angustia",
+            "Libertad de incomodidad por condiciones físicas o térmicas",
+            "Libertad de dolor, lesiones y enfermedades",
+            "Libertad para expresar sus comportamientos naturales"
+        ]
+    },
+    {
+        title: "Misión",
+        texto: "Ofrecer y realizar servicios vetérinarios de gran calidad y alto nivel técnico y científico, dirigidos a nuestros clientes y asus mascotas para satisfacer con excelentecia sus necesidades"
+    },
+    {
+        title: "Visión",
+        texto: "Ser una veterinaria autosustentable y muy productible, reconocida ocmo referente nacional en bienestar animal, responsable del cambio en la relación humano - animal en el Ecuador"
+    }
+];
+
 const subtitle = document.querySelectorAll('.subtitulo');
 const texto = document.querySelectorAll('.texto');
 const literals = document.querySelectorAll('.literal');
 
 async function obtenerDatos() {
-    const response = await fetch("http://127.0.0.1:5500/JS/slider.json");
-    const json = await response.json();
+    // const response = await fetch("file:///C:/Users/BRYAN/Documents/GitHub/Laboratorio-SAW/JS/slider.json", { credentials: 'same-origin' });
+    // const json = await response.json();
+    // En caso de contar con una API en vez de data -> json
 
+    console.log(data)
     subtitle.forEach(function (datos, index) {
-        datos.textContent = json[index].title;
+        datos.textContent = data[index].title;
     });
 
     texto.forEach(function (datos, index) {
-        datos.textContent = json[index].texto;
+        datos.textContent = data[index].texto;
     });
 
     literals.forEach(function (datos, index) {
-        datos.textContent = json[1].literals[index];
+        datos.textContent = data[1].literals[index];
         datos.style.fontFamily = "Advent Pro";
     });
 }
