@@ -1,7 +1,7 @@
 var boton = document.getElementById('agregar');
 var guardar = document.getElementById('guardar');
 var lista = document.getElementById("lista");
-var data = [];
+var data = [];// arreglo para guardar objetos
 boton.addEventListener("click", agregar);
 var cant = 0;
 
